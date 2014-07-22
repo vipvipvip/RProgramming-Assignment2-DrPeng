@@ -52,7 +52,7 @@ cacheSolve <- function (x, ...) {
   # created with makeCacheMatrix(). However, it first checks to see if the matrix
   # has already been inverted. If so, it gets the inverse from the cache and skips 
   # the computation. Otherwise, it inverses the matrix and sets the value of the inverted matrix
-  #in the cache via the setmean function.
+  #in the cache via the setinverse function.
   
   minv <- x$getinverse()
   if(!is.null(minv)) {
